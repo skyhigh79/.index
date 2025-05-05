@@ -1,0 +1,51 @@
+.메인메뉴 {
+    position: relative;
+    font-size: 1.5em;
+    font-weight: bold;
+    font-style: italic;
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+    overflow: hidden;
+    z-index: 1;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+}
+
+.메인메뉴::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.4;
+    z-index: 0;
+    border-radius: 8px;
+}
+
+.메인메뉴[data-menu="깐풍기"]::before {
+    background-image: url("https://i.ibb.co/fVq6120f/image.jpg");
+}
+
+.메인메뉴[data-menu="고추찜닭"]::before {
+    background-image: url("https://i.ibb.co/bRKpRJZK/image.jpg");
+}
+
+.메인메뉴[data-menu="치킨치즈크로켓"]::before {
+    background-image: url("https://i.ibb.co/Vcfc0bKP/image.jpg");
+}
+
+.메인메뉴[data-menu="버섯우불고기"]::before {
+    background-image: url("https://i.ibb.co/Y4GR9cX3/image.jpg");
+}
+
+.메인메뉴[data-menu="오리두루치기"]::before {
+    background-image: url("https://i.ibb.co/jZWBrz25/image.jpg");
+}
+
+.메인메뉴[data-menu="갈비양념불고기"]::before {
+    background-image: url("https://i.ibb.co/wFn9vtLy/image.jpg");
+}
+
+.메인메뉴[data-menu="순살치킨청양매운맛소스"]::before {
+    background-image: url("https://i.ibb.co/mjpfnMZ/image.png");
+}
